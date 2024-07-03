@@ -1,235 +1,32 @@
 ---
 layout: home
-title: Jekyll Gitbook Theme
+title: 환영합니다
 permalink: /
 ---
 
-Make Jelly site have a GitBook look!
-
-## Demo
-
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
-
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
-
-## Why Jekyll with GitBook
-
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
-
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
-
-## How to Get Started
-
-This theme can be used just as other [Jekyll themes][1] and support [remote theme][12],
-see [the official guide][13] as well.
-
-You can introduce this jekyll theme into your own site by either
-
-- [Fork][3] this repository and add your markdown posts to the `_posts` folder.
-- Use as a remote theme in your [`_config.yml`][14](just like what we do for this
-  site itself),
-
-```yaml
-remote_theme: sighingnow/jekyll-gitbook
-```
-
-### Deploy Locally with Jekyll Serve
-
-This theme can be ran locally using Ruby and Gemfiles.
-
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
-
-## Full-text search
-
-The search functionality in jekyll-gitbook theme is powered by the [gitbook-plugin-search-pro][5] plugin and is enabled by default.
-
-[https://sighingnow.github.io/jekyll-gitbook/?q=generated](https://sighingnow.github.io/jekyll-gitbook/?q=generated)
-
-## Code highlight
-
-The code highlight style is configurable the following entry in `_config.yaml`:
-
-```yaml
-syntax_highlighter_style: colorful
-```
-
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./assets/gitbook/rouge/](./assets/gitbook/rouge/).
-
-## How to generate TOC
-
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
-
-```yaml
-toc:
-    enabled: true
-    h_min: 1
-    h_max: 3
-```
-
-## Google Analytics, etc.
-
-The jekyll-gitboook theme supports embedding the [Google Analytics][7], [CNZZ][8] and [Application Insights][9] website analytical tools with the following
-minimal configuration in `_config.yaml`:
-
-```yaml
-tracker:
-  google_analytics: "<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
-```
-
-Similarly, CNZZ can be added with the following configuration in `_config.yaml`
-
-```yaml
-tracker:
-  cnzz: "<YOUR CNZZ ANALYTICS KEY, e.g., xxxxxxxx>"
-```
-
-Application Insights can be added with the following configuration in `_config.yaml`
-
-```yaml
-tracker:
-  application_insights: "<YOUR APPLICATION INSIGHTS CONNECTION STRING>"
-```
-
-## Disqus comments
-
-[Disqus](https://disqus.com/) comments can be enabled by adding the following configuration in `_config.yaml`:
-
-```yaml
-disqushandler: "<YOUR DISQUS SHORTNAME>"
-```
-
-## Jekyll collections
-
-Jekyll's [collections][15] is supported to organize the pages in a more fine-grained manner, e.g.,
-
-```yaml
-collections:
-  pages:
-    output: true
-    sort_by: date
-    permalink: /:collection/:year-:month-:day-:title:output_ext
-  others:
-    output: true
-    sort_by: date
-    permalink: /:collection/:year-:month-:day-:title:output_ext
-```
-
-An optional `ordered_collections` key can be added to `_config.yaml` to control the order of collections in the sidebar:
-
-```yaml
-ordered_collections:
-  - posts
-  - pages
-  - others
-```
-
-If not specified, the order of collections would be decided by Jekyll. Note that the key `posts` is a special collection
-that indicates the `_posts` pages of Jekyll.
-
-## Extra StyleSheet or Javascript elements
-
-You can add extra CSS or JavaScript references using configuration collections:
-
-- extra_css: for additional style sheets. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-- extra_header_js: for additional scripts to be included in the `<head>` tag, after the `extra_css` has been added. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-- extra_footer_js: for additional scripts to be included at the end of the HTML document, just before the site tracking script. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-
-## Customizing font settings
-
-The fonts can be customized by modifying the `.book.font-family-0` and `.book.font-family-1` entry in [`./assets/gitbook/custom.css`][10],
-
-```css
-.book.font-family-0 {
-    font-family: Georgia, serif;
-}
-.book.font-family-1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-```
-
-## Tips, Warnings and Dangers blocks
-
-The jekyll-gitbook theme supports customized kramdown attributes (`{: .block-tip }`, `{: .block-warning }`,
-`{: .block-danger }`) like that displayed in [the discord.js website][11]. The marker can be used like
-
-```markdown
-> ##### TIP
->
-> This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
-> this or a similar version after installation.
-{: .block-tip }
-```
-
-Rendered page can be previewed from
-
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html)
-
-## Cover image inside pages
-
-The jekyll-gitbook theme supports adding a cover image to a specific page by adding
-a `cover` field to the page metadata:
-
-```diff
-  ---
-  title: Page with cover image
-  author: Tao He
-  date: 2022-05-24
-  category: Jekyll
-  layout: post
-+ cover: /assets/jekyll-gitbook/dinosaur.gif
-  ---
-```
-
-The effect can be previewed from
-
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html)
-
-## Diagrams with mermaid.js
-
-This jekyll-theme supports [mermaid.js](https://mermaid.js.org/) to render diagrams
-in markdown.
-
-To enable the mermaid support, you need to set `mermaid: true` in the front matter
-of your post.
-
-```markdown
----
-mermaid: true
----
-```
-
-The example can be previewed from
-
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2023-08-31-mermaid.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2023-08-31-mermaid.html)
-
-## License
-
-This work is open sourced under the Apache License, Version 2.0.
-
-Copyright 2019 Tao He.
-
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
-[7]: https://analytics.google.com/analytics/web/
-[8]: https://www.cnzz.com/
-[9]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
-[10]: https://github.com/sighingnow/jekyll-gitbook/blob/master/gitbook/custom.css
-[11]: https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas
-[12]: https://rubygems.org/gems/jekyll-remote-theme
-[13]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-[14]: https://github.com/sighingnow/jekyll-gitbook/blob/master/_config.yml
-[15]: https://jekyllrb.com/docs/collections/
+이 블로그에서는 지리정보체계(GIS)와 관련된 문제해결 방법에 대해서 주로 다룹니다.
+​
+## 글쓴이 소개
+​
+고려대학교 사범대학 지리교육과에서 21학번으로 다니고 있고, 2025년부터 정보대학 인공지능융합전공에 진입할 예정인 정상혁입니다. 공간 데이터를 분석하고 문제를 해결하는 일에 흥미가 있습니다. 2023년 하반기부터 2025년 상반기까지 사회복무요원으로 국립 특수학교에서 근무중입니다. 군휴학중인 현재 차후 진로는 아직 명확하게 결정하지 않았습니다. 지리학자, 교사, 법조인 등 모든 가능성을 열어두고 있습니다. 선항 영향력을 끼치면서 내일 죽어도 아쉽지 않게 즐겁게 사는 것을 목표로 하고 있습니다.
+​
+## 블로그 설립 목적
+​
+-   **개인 포트폴리오 정리** : 제가 이 분야에 대해서 가지고 있는 지식을 저장하고 미래의 평가자에게 이 분야에 가진 열정을 어필하기 위해서입니다. 제가 기억하기 위해서 운영하기도 하지만, 남에게 보이기 위해서 운영하기도 하므로 최대한 정갈하고 보기 쉽게 정리할 계획입니다.
+-   **지식 공유** : 대학 입학 후 그리 많은 것을 배우지는 않았지만 어느새 학부생 고학년에 해당하는 학기에 진입했습니다. 제가 가진 지식을 동기, 후배, 그리고 전국의 지리학을 공부하는 분들과 나누고 싶어서 이 블로그를 개설하였습니다.
+-   **네이버 블로그와의 주제 분리** : 2023년 상반기까지 네이버 블로그는 지인들과 나누는 일상 이야기와 GIS 이외의 공부 내용, GIS 공부 내용이 모두 포함되어 올라오고 있었습니다. 네이버 블로그와 GIS 블로그의 대상 독자층이 다른 만큼 두개의 블로그를 분리해서 운영하여 보는 사람들이 편하게 볼 수 있게 하고자 합니다.
+​
+## 왜 티스토리인가
+​
+이 블로그를 최종적으로 개설하기 전, 깃헙 페이지와 벨로그 또한 기술블로그 후보군에 포함되어 있었습니다. 그러나 깃헙 페이지는 독자들과의 소통이 불편하고, 벨로그는 이용자가 다소 적다는 한계점이 있어 최종적으로 티스토리에 정착하게 되었습니다. 다만 이 블로그의 모든 글은 마크다운(Markdown)으로 작성되어 있어 언제라도 짧은 기간 안에 플랫폼을 바꾸어 게시하기 용이하게 하였습니다.
+​
+## 블로그 운영 방식
+​
+-   **기술블로그 방식** : 여타 포트폴리오용 기술블로그와 비슷하게 운영됩니다. 단순한 사실의 나열이 아닌, 제가 문제에 직면하고 해결하는 과정을 중심으로 문제 해결 과정과 결과를 모두 서술하는 방향으로 운영하되 최대한 쉬운 언어를 사용할 생각입니다.
+-   **최소내용 방식** : 블로그의 내용은 최소한으로 유지하여 전체적으로 둘러보는 데 긴 시간이 소모되지 않도록 할 것입니다. 따라서 기본 개념이나 용어, 소프트웨어의 기초 사용법 등 지나치게 개념에 가까운 내용은 생략할 에정입니다. 다만 독자가 검색을 통해 관련 내용을 알아볼 수 있도록 검색 가이드를 지속적으로 제공할 예정입니다. 본 블로그는 정해진 개수의 게시물을 위키처럼 주기적으로 업데이트할 예정이며, 업데이트 내용은 토요일마다 인스타그램, 네이버블로그, 그리고 이 블로그의 보고 계신 메인 페이지에 공지될 예정입니다.  
+많이 부족하고 빈약한 블로그이지만 많은 관심 부탁드립니다.  
+감사합니다.
+
+## 라이센스
+
+- **Jekyll Gitbook** : This work is open sourced under the Apache License, Version 2.0. Copyright 2019 Tao He.
