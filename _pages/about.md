@@ -1,7 +1,7 @@
 ---
-title: About
-author: Tao He
-date: 2022-02-04
+title: CV
+author: 정상혁
+date: 2024-01-01
 category: Jekyll
 layout: post
 ---
