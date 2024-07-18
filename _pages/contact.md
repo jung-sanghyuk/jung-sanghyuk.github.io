@@ -10,4 +10,4 @@ layout: post
 
 [Instagram](https://instagram.com/jung_sanghyuk_)
 
-[Notion](https://www.notion.so/sanghyeok02/Hyuk-s-Notion-1089f4f494994d6ba10239c266d71af7)
+[Notion](https://www.notion.so/sanghyeok02/Hyuk-s-Notion-1089f4f494994d6ba10239c266d71af7?pvs=4)
