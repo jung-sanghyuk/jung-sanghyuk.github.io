@@ -6,4 +6,8 @@ category: Jekyll
 layout: post
 ---
 
-This is an contact page.
+[GitHub Repo](github.com/jung_sanghyuk_)
+
+[Instagram](instagram.com/jung_sanghyuk_)
+
+[Notion](notion.so/nacl31566)
