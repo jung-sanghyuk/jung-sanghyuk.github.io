@@ -6,8 +6,8 @@ category: Jekyll
 layout: post
 ---
 
-[GitHub Repo](github.com/jung_sanghyuk_)
+[GitHub Repo](https://github.com/jung_sanghyuk_)
 
-[Instagram](instagram.com/jung_sanghyuk_)
+[Instagram](https://instagram.com/jung_sanghyuk_)
 
-[Notion](notion.so/nacl31566)
+[Notion](https://notion.so/nacl31566)
