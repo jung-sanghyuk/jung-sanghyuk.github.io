@@ -1,7 +1,7 @@
 # Configurations
-title:            정상혁 기술블로그
-longtitle:        정상혁 기술블로그
-author:           정상혁
+title:            JSH Gitbook
+longtitle:        JSH Gitbook
+author:           JSH
 email:            nacl31566@gmail.com
 description: >
   Build Jekyll site with the GitBook style.
