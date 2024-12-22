@@ -20,9 +20,13 @@ GIS is a fun tool identifing local & global spatial phenomena and finding creati
 
 [QGIS](https://www.qgis.org/download/) is an open-source GIS software which has intiuitive graphic-based interface. Even today, number of students enters the world of GIS with QGIS. It can be operate on various platforms such as Windows, MacOS, Linux and quick help is available thanks for active user community and forum, documentations. QGIS job can be automated with Python and R. However function for 3D or network analysis is little insufficient in comparison to ArcGIS Pro.
 
+## Geoda
+
+[Geoda](https://geodacenter.github.io/download.html) is a open-source spatial analysis tools started form a module worked under the old Esri ArcView to perform exploratory spatial data analysis. GeoDa has powerful capabilities to perform spatial analysis, multivariate exploratory data analysis, and global and local spatial autocorrelation. It also performs basic linear regression.
+
 ## ArcGIS Pro
 
-[ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm), a spatial analysis software developed by [ESRI](https://www.esri.com/), a global GIS software developer, facilitates cloud-based data management and sharing through integration with ArcGIS Online. It can also be used efficiently by large organizations by integrating with various product lines of ArcGIS Enterprise. This is why many government offices and businesses prefer ArcGIS Pro. ESRI also provides professional technical support and training programs. You can broaden your knowledge related to GIS by enrolling in programs run by ESRI headquarters or branch offices. However, due to the nature of commercial programs, the license cost is high (we had to spend around 800$ a year when using it at school.) Among the programs listed in this post, the disadvantage is that the highest system requirement specification is the highest.
+[ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm), a spatial analysis software developed by [Esri](https://www.esri.com/), a global GIS software developer, facilitates cloud-based data management and sharing through integration with ArcGIS Online. It can also be used efficiently by large organizations by integrating with various product lines of ArcGIS Enterprise. This is why many government offices and businesses prefer ArcGIS Pro. ESRI also provides professional technical support and training programs. You can broaden your knowledge related to GIS by enrolling in programs run by ESRI headquarters or branch offices. However, due to the nature of commercial programs, the license cost is high (we had to spend around 800$ a year when using it at school.) Among the programs listed in this post, the disadvantage is that the highest system requirement specification is the highest.
 
 ## License
 
