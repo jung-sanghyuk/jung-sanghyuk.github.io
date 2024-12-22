@@ -1,30 +1,15 @@
 ---
 layout: home
-title: 환영합니다
+title: Welcome
 permalink: /
 ---
 
-이 블로그에서는 지리정보체계(GIS)와 관련된 문제해결 방법에 대해서 주로 다룹니다.
-​
-## 글쓴이 소개
-​
-고려대학교 사범대학 지리교육과에서 21학번으로 다니고 있고, 2025년부터 정보대학 인공지능융합전공에 진입할 예정인 정상혁입니다. 공간 데이터를 분석하고 문제를 해결하는 일에 흥미가 있습니다. 2023년 하반기부터 2025년 상반기까지 사회복무요원으로 국립 특수학교에서 근무중입니다. 군휴학중인 현재 차후 진로는 아직 명확하게 결정하지 않았습니다. 지리학자, 교사, 법조인 등 모든 가능성을 열어두고 있습니다. 선한 영향력을 끼치면서 내일 죽어도 아쉽지 않게 즐겁게 사는 것을 목표로 하고 있습니다.
-​
-## 블로그 설립 목적
-​
--   **개인 포트폴리오 정리** : 제가 이 분야에 대해서 가지고 있는 지식을 저장하고 미래의 평가자에게 이 분야에 가진 열정을 어필하기 위해서입니다. 제가 기억하기 위해서 운영하기도 하지만, 남에게 보이기 위해서 운영하기도 하므로 최대한 정갈하고 보기 쉽게 정리할 계획입니다.
--   **지식 공유** : 대학 입학 후 그리 많은 것을 배우지는 않았지만 어느새 학부생 고학년에 해당하는 학기에 진입했습니다. 제가 가진 지식을 동기, 후배, 그리고 전국의 지리학을 공부하는 분들과 나누고 싶어서 이 블로그를 개설하였습니다.
--   **네이버 블로그와의 주제 분리** : 2023년 상반기까지 네이버 블로그는 지인들과 나누는 일상 이야기와 GIS 이외의 공부 내용, GIS 공부 내용이 모두 포함되어 올라오고 있었습니다. 네이버 블로그와 GIS 블로그의 대상 독자층이 다른 만큼 두개의 블로그를 분리해서 운영하여 보는 사람들이 편하게 볼 수 있게 하고자 합니다.
-​
-## 블로그 운영 방식
-​
--   **기술블로그 방식** : 여타 포트폴리오용 기술블로그와 비슷하게 운영됩니다. 단순한 사실의 나열이 아닌, 제가 문제에 직면하고 해결하는 과정을 중심으로 문제 해결 과정과 결과를 모두 서술하는 방향으로 운영하되 최대한 쉬운 언어를 사용할 생각입니다.
--   **최소내용 방식** : 블로그의 내용은 최소한으로 유지하여 전체적으로 둘러보는 데 긴 시간이 소모되지 않도록 할 것입니다. 따라서 기본 개념이나 용어, 소프트웨어의 기초 사용법 등 지나치게 개념에 가까운 내용은 생략할 에정입니다. 다만 독자가 검색을 통해 관련 내용을 알아볼 수 있도록 검색 가이드를 지속적으로 제공할 예정입니다. 본 블로그는 정해진 개수의 게시물을 위키처럼 주기적으로 업데이트할 예정이며, 업데이트 내용은 토요일마다 인스타그램, 네이버블로그, 그리고 이 블로그의 보고 계신 메인 페이지에 공지될 예정입니다.  
-많이 부족하고 빈약한 블로그이지만 많은 관심 부탁드립니다.  
-감사합니다.
+This Gitbook page covers problem solving processes using geographic information system(GIS).
 
-## 라이센스
+GIS is a fun tool identifing local & global spatial phenomena and finding creative solutions. You can use graphic software such as QGIS or ArcGIS Pro, and also command line-based tools such as R and Python. This gitbook will make known the basic usage of specific tools and what tool is ideal for each stage of spatial data analysis. This gitbook includes a basic level information of GIS and spatial analysis but it would be slightly helpful.
+​
+## License
 
 - **Jekyll Gitbook** : This work is open sourced under the Apache License, Version 2.0. Copyright 2019 Tao He.
 
-(C) 2023-2024 Sanghyuk Jung
+(C) 2023-2025 Sanghyuk Jung
