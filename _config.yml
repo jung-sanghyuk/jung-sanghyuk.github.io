@@ -9,11 +9,11 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Sang-hyeok Jeong"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Sang-hyeok Jeong"
 description              : &description "personal description"
-url                      : https://jung-sanghyuk.github.io
+url                      : https://1jsh.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
